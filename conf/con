@@ -1,0 +1,16 @@
+WSGIScriptAlias / /home/ubuntu/geekbattle15/geekbattle/geekbattle/wsgi.py
+WSGIPythonPath /home/ubuntu/geekbattle15/geekbattle
+<Directory /home/ubuntu/geekbattle15/geekbattle/geekbattle>
+    <Files wsgi.py>
+        Order deny,allow
+        Require all granted
+    </Files>
+</Directory>
+
+<Directory /home/ubuntu/geekbattle15/geekbattle/static>
+    Require all granted
+</Directory>
+
+<Directory /home/ubuntu/geekbattle15/geekbattle/media>
+    Require all granted
+</Directory>
